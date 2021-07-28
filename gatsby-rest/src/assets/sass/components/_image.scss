@@ -71,9 +71,12 @@
 
     .mobile {
       border-radius: 0;
-      display: block;
       position: relative;
-      width: 100%;
+      display: flex;
+      min-width: 110px;
+      max-width: 500px;
+      min-height: 193px;
+      max-height: 873px;
     }
 
     .inner,
