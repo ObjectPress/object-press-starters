@@ -7,10 +7,10 @@
     "url": "git+https://github.com/ObjectPress/object-press-starters.git"
   },
   "dependencies": {
-    "axios": "^0.21.1",
     "gatsby": "^3.9.1",
     "gatsby-plugin-image": "^1.9.0",
     "gatsby-plugin-manifest": "^3.9.0",
+    "gatsby-plugin-objectpress": "^0.1.0",
     "gatsby-plugin-react-helmet": "^4.6.0",
     "gatsby-plugin-sass": "^4.8.0",
     "gatsby-plugin-sharp": "^3.9.0",
