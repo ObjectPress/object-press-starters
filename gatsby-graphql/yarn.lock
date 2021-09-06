@@ -5656,10 +5656,10 @@ gatsby-plugin-manifest@^3.9.0:
     semver "^7.3.5"
     sharp "^0.29.0"
 
-gatsby-plugin-objectpress@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-objectpress/-/gatsby-plugin-objectpress-0.1.0.tgz#4130aae4d9d84414a517c62a75e7002fe375bef2"
-  integrity sha512-28fPH3CDVoWlOXD1SLrYozJfmPbSqk8ygpE2dPednkr2z8yBsQNPJjqr/YZDd7SQPkumvILX4UtrkPKNUUuWyw==
+gatsby-plugin-objectpress@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-objectpress/-/gatsby-plugin-objectpress-0.1.1.tgz#827f90d719852e21af9ae043dda4bcc5ef434957"
+  integrity sha512-uRyRgz9TeOmW/hQoCTl546rNcEBjxtrqnV0SHKsXVqcf3SO6iLmI8o1dIHYnL5cGrjbFV3Z9T721vxA7omX0uw==
   dependencies:
     axios "^0.21.3"
 
