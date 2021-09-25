@@ -10,13 +10,23 @@
     An awesome way to jumpstart your way into the Jamstack!
   </p>
 
+  <br />
+
+  <p align="center">
+    <a href="https://app.netlify.com/start/deploy?repository=https://github.com/ObjectPress/object-press-starters">
+    <img src="https://www.netlify.com/img/deploy/button.svg">
+    </a>
+  </p>
+
+  <br />
+
   <h2 align="center">Object Press is a FREE headless content management system.</h1>
 
   <br />
 
   <p align="center">
     <a href="https://www.objectpress.io">
-      <img src="https://share.objectpress.io/uploads/1625312353876/create-a-blog.png" alt="screenshot" width="auto" height="auto">
+      <img src="https://share.objectpress.io/uploads/1632531464554/objectpress-io-admin-posts.png" alt="screenshot" width="auto" height="auto">
     </a>
   </p>
 
@@ -30,11 +40,22 @@
 
 1. Sign up at [objectpress.io](https://www.objectpress.io)
 2. Create your content
-3. Update the APP_SECRET and USER_SECRET in your gatsby-node.js file to deploy
+3. Update the APP_SECRET and USER_SECRET in your gatsby-config.js file to deploy
+
+```js
+// loads the source-plugin and adds credentials
+    {
+      resolve: `gatsby-plugin-objectpress`,
+      options: {
+        appSecret: `APP_SECRET`,
+        userSecret: `USER_SECRET`,
+      },
+    },
+```
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. <u>If you're interested in the project at all, please reach out.</u> Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
