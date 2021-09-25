@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
@@ -7,7 +7,13 @@ import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 
 const IndexPage = ({ data }) => {
-  const blog = data.allPost.nodes;
+  const [blog, setBlogs] = useState([]);
+
+  useEffect(() => {
+    if (data?.allPost.nodes) {
+      setBlogs(data?.allPost.nodes);
+    }
+  }, [data]);
 
   return (
     <Layout>
