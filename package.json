@@ -26,7 +26,7 @@
   },
   "scripts": {
     "start": "gatsby develop",
-    "build": "set \"GENERATE_SOURCEMAP=false\" && gatsby build",
+    "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Error: no test specified\" && exit 1"
