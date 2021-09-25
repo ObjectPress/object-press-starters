@@ -55,7 +55,7 @@
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. <u>If you're interested in the project at all, please reach out.</u> Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. <u>If you're interested in the project, please reach out.</u> Any contributions are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
