@@ -42,6 +42,6 @@
   "homepage": "https://github.com/ObjectPress/object-press-starters.git#readme",
   "devDependencies": {
     "@netlify/plugin-gatsby": "^1.0.3",
-    "prettier": "^2.3.2"
+    "prettier": "2.4.1"
   }
 }

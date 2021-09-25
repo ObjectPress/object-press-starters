@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import { StaticImage } from "gatsby-plugin-image";
-import { slugify } from "../utils";
 import Layout from "../components/Layout";
 
 const IndexPage = ({ data }) => {

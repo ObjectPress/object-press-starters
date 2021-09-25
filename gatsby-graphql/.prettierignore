@@ -1,4 +1,8 @@
+# Ignore artifacts:
 .cache
 node_modules
 public
 yarn.lock
+
+# Ignore all HTML files:
+*.html

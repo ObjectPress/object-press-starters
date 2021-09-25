@@ -17,7 +17,7 @@ body {
 }
 
 // Ensures page width is always >=320px.
-@include breakpoint('<=xxsmall') {
+@include breakpoint("<=xxsmall") {
   html,
   body {
     min-width: 320px;
@@ -45,8 +45,8 @@ body,
     *,
     *:before,
     *:after {
-      @include vendor('animation', 'none !important');
-      @include vendor('transition', 'none !important');
+      @include vendor("animation", "none !important");
+      @include vendor("transition", "none !important");
     }
   }
 }
