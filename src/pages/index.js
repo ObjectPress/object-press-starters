@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
@@ -7,13 +7,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 
 const IndexPage = ({ data }) => {
-  const [blog, setBlogs] = useState([]);
-
-  useEffect(() => {
-    if (data?.allPost.nodes) {
-      setBlogs(data?.allPost.nodes);
-    }
-  }, [data]);
+  const [blog] = useState(data.allPost.nodes);
 
   return (
     <Layout>
@@ -94,7 +88,7 @@ const IndexPage = ({ data }) => {
 
       <section id="two" className="wrapper">
         <div className="inner alt">
-          {blog.map((post) => {
+          {blog.reverse().map((post) => {
             return (
               <section className="spotlight" key={post.title}>
                 <div className="image fit">
