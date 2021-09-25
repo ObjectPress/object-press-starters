@@ -1,5 +1,3 @@
-const { slugify } = require("./src/utils");
-
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
   const { data } = await graphql(`
     query Post {
@@ -15,6 +13,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
           images
           publishAt
           title
+          slug
         }
       }
     }
@@ -24,7 +23,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
 
   posts.forEach((post) => {
     createPage({
-      path: `/${slugify(post.title)}`,
+      path: `/${post.slug}`,
       component: require.resolve(`./src/templates/post`),
       context: post,
     });

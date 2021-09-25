@@ -103,7 +103,7 @@ const IndexPage = ({ data }) => {
                   <ul className="actions special">
                     <li>
                       <Link
-                        to={`/${slugify(post.title)}`}
+                        to={`/${post.slug}`}
                         className="button primary icon fa-plus small"
                       >
                         Read more...
@@ -167,6 +167,7 @@ export const data = graphql`
   query IndexPageQuery {
     allPost {
       nodes {
+        slug
         title
         id
         images
