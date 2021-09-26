@@ -1,13 +1,22 @@
-import React, { useState } from "react";
-import { graphql } from "gatsby";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 
-const IndexPage = ({ data }) => {
-  const [blog] = useState(data.allPost.nodes);
+const IndexPage = ({ pageContext }) => {
+  const [blog, setBlog] = useState([]);
+
+  useEffect(() => {
+    let newPosts = [];
+
+    Object.keys(pageContext).forEach((key) => newPosts.push(pageContext[key]));
+
+    newPosts.sort((a, b) => b.publishAt.localeCompare(a.publishAt));
+
+    setBlog(newPosts);
+  }, [pageContext]);
 
   return (
     <Layout>
@@ -88,7 +97,7 @@ const IndexPage = ({ data }) => {
 
       <section id="two" className="wrapper">
         <div className="inner alt">
-          {blog.reverse().map((post) => {
+          {blog.map((post) => {
             return (
               <section className="spotlight" key={post.title}>
                 <div className="image fit">
@@ -161,24 +170,5 @@ const IndexPage = ({ data }) => {
     </Layout>
   );
 };
-
-export const data = graphql`
-  query IndexPageQuery {
-    allPost {
-      nodes {
-        slug
-        title
-        id
-        images
-        branches {
-          altTag
-          description
-          keywords
-          summary
-        }
-      }
-    }
-  }
-`;
 
 export default IndexPage;
