@@ -7,8 +7,8 @@
 /* Spotlight */
 
 .spotlight {
-  @include vendor("display", "flex");
-  @include vendor("align-items", "center");
+  @include vendor('display', 'flex');
+  @include vendor('align-items', 'center');
   margin: 0 0 _size(element-margin) 0;
 
   .image {
@@ -41,7 +41,7 @@
   }
 
   &:nth-child(2n) {
-    @include vendor("flex-direction", "row-reverse");
+    @include vendor('flex-direction', 'row-reverse');
 
     .image {
       margin: 0 0 0 (_size(element-margin) * 1.5);
@@ -53,7 +53,7 @@
   }
 
   // Small.
-  @include breakpoint("<=small") {
+  @include breakpoint('<=small') {
     // Landscape.
     @include orientation(landscape) {
       .image {
@@ -69,7 +69,7 @@
 
     // Portrait.
     @include orientation(portrait) {
-      @include vendor("flex-direction", "column !important");
+      @include vendor('flex-direction', 'column !important');
 
       .image {
         width: 100%;

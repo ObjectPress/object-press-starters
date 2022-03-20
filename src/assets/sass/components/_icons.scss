@@ -38,7 +38,7 @@ ul.icons {
     }
 
     // Small.
-    @include breakpoint("<=small") {
+    @include breakpoint('<=small') {
       li {
         padding: 0 1.25em 0 0;
 
@@ -72,7 +72,7 @@ ul.icons {
     }
 
     // Small.
-    @include breakpoint("<=small") {
+    @include breakpoint('<=small') {
       // Portrait.
       @include orientation(portrait) {
         text-align: left;
@@ -95,7 +95,7 @@ ul.icons {
             }
 
             &:after {
-              content: "";
+              content: '';
               display: block;
               clear: both;
             }

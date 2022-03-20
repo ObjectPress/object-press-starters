@@ -3,29 +3,21 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     query Post {
       allPost {
         nodes {
-          branches {
-            altTag
-            description
-            keywords
-            summary
-          }
-          content
-          images
-          publishAt
           title
+          publishAt
+          pageTitle
           slug
+          content
+          description
+          keywords
+          images
+          altTags
         }
       }
     }
   `);
 
   const posts = data.allPost.nodes;
-
-  createPage({
-    path: `/`,
-    component: require.resolve(`./src/templates/index`),
-    context: posts,
-  });
 
   posts.forEach((post) => {
     createPage({

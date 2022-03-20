@@ -21,12 +21,12 @@
   }
 
   // Medium.
-  @include breakpoint("<=medium") {
+  @include breakpoint('<=medium') {
     @include padding(4em, 4em);
   }
 
   // Small.
-  @include breakpoint("<=small") {
+  @include breakpoint('<=small') {
     // Landscape.
     @include orientation(landscape) {
       @include padding(3em, 3em);

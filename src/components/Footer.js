@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 
 const Footer = () => {
   const socialLinks = [
     {
-      icon: "fa-github",
-      name: "Github",
-      url: "https://github.com/ObjectPress",
+      icon: 'fa-github',
+      name: 'Github',
+      url: 'https://github.com/ObjectPress',
     },
     {
-      icon: "fa-envelope-o",
-      name: "Email",
-      url: "mailto:hello@objectpress.io",
+      icon: 'fa-envelope-o',
+      name: 'Email',
+      url: 'mailto:hello@objectpress.io',
     },
   ];
 

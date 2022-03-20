@@ -1,9 +1,9 @@
-@import "libs/vars";
-@import "libs/functions";
-@import "libs/mixins";
-@import "libs/vendor";
-@import "libs/breakpoints";
-@import "libs/html-grid";
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/vendor';
+@import 'libs/breakpoints';
+@import 'libs/html-grid';
 
 /*
 	Fractal by HTML5 UP
@@ -17,12 +17,12 @@
   .main-body.is-preload &,
   body.is-preload & {
     .content {
-      @include vendor("transform", "none");
+      @include vendor('transform', 'none');
       opacity: 1;
     }
 
     .image {
-      @include vendor("transform", "none");
+      @include vendor('transform', 'none');
       opacity: 1;
 
       img {

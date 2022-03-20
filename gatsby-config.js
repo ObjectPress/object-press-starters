@@ -33,8 +33,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-objectpress`,
       options: {
-        appSecret: `XtMsuJ+nr7PJ4wqxWjRUhqwbg7BuCqHOm2Q5kP5Xq4M=`,
-        userSecret: `Mk+iKS9MTaApmlCDWur9uJoqtQBk9Qm9prZU/ui5Dd0=`,
+        appSecret: `r4FHszB0vG4cx/RyxhkzqcJkqB5H/3wF31AVhjv0xkM=`,
+        userSecret: `D7m5yEAJwqvQIq50xfUGBU8VZH3AXNy1eJJqBXwy1tE=`,
       },
     },
   ],

@@ -1,6 +1,6 @@
   <p align="center">
     <a href="https://www.objectpress.io">
-      <img src="https://share.objectpress.io/uploads/1619551569704/logo-circle.png" alt="logo" width="145" height="145">
+      <img src="https://share.objectpress.io/logo-circle.png" alt="logo" width="145" height="145">
     </a> 
   </p>
 
@@ -26,7 +26,7 @@
 
   <p align="center">
     <a href="https://www.objectpress.io">
-      <img src="https://share.objectpress.io/uploads/1632531464554/objectpress-io-admin-posts.png" alt="screenshot" width="auto" height="auto">
+      <img src="https://share.objectpress.io/dashboard.png" alt="screenshot" width="auto" height="auto">
     </a>
   </p>
 

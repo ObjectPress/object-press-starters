@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "gatsby";
-import Logo from "../assets/images/logo-text.webp";
+import React from 'react';
+import { Link } from 'gatsby';
+import Logo from '../assets/images/logo-text.webp';
 
 const Navigation = () => {
   return (

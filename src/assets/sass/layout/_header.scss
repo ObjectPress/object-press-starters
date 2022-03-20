@@ -9,10 +9,10 @@
 #header {
   @include color(accent1);
   @include padding(4.5em, 0);
-  @include vendor("align-items", "center");
-  @include vendor("display", "flex");
-  @include vendor("justify-content", "center");
-  background-image: url("../images/background.webp");
+  @include vendor('align-items', 'center');
+  @include vendor('display', 'flex');
+  @include vendor('justify-content', 'center');
+  background-image: url('../images/background.webp');
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -36,8 +36,8 @@
   }
 
   .content {
-    @include vendor("transition", ("opacity 0.5s ease", "transform 1s ease"));
-    @include vendor("transform", "translateX(0)");
+    @include vendor('transition', ('opacity 0.5s ease', 'transform 1s ease'));
+    @include vendor('transform', 'translateX(0)');
     opacity: 1;
     text-align: right;
     margin: (_size(element-margin) * -1.75) (_size(element-margin) * 2) 0 0;
@@ -47,13 +47,13 @@
     }
 
     .actions {
-      @include vendor("justify-content", "flex-end");
+      @include vendor('justify-content', 'flex-end');
     }
   }
 
   .image {
-    @include vendor("transition", ("opacity 1s ease", "transform 1s ease"));
-    @include vendor("transform", "translateY(0)");
+    @include vendor('transition', ('opacity 1s ease', 'transform 1s ease'));
+    @include vendor('transform', 'translateY(0)');
     opacity: 1;
 
     img {
@@ -62,12 +62,12 @@
   }
 
   // Large.
-  @include breakpoint("<=large") {
-    background-image: url("../images/background.webp");
+  @include breakpoint('<=large') {
+    background-image: url('../images/background.webp');
   }
 
   // Medium.
-  @include breakpoint("<=medium") {
+  @include breakpoint('<=medium') {
     height: auto;
     min-height: 0;
 
@@ -75,14 +75,14 @@
       margin: (_size(element-margin) * -1) (_size(element-margin) * 2) 0 0;
 
       .actions {
-        @include vendor("justify-content", "center");
+        @include vendor('justify-content', 'center');
       }
     }
 
     // Portrait.
     @include orientation(portrait) {
       @include padding(6em, 3em);
-      @include vendor("flex-direction", "column-reverse");
+      @include vendor('flex-direction', 'column-reverse');
 
       .content {
         display: block;
@@ -98,8 +98,8 @@
   }
 
   // Small.
-  @include breakpoint("<=small") {
-    background-image: url("../images/background.webp");
+  @include breakpoint('<=small') {
+    background-image: url('../images/background.webp');
 
     h1 {
       font-size: 2em;
@@ -143,7 +143,7 @@
   }
 
   // XSmall.
-  @include breakpoint("<=xsmall") {
+  @include breakpoint('<=xsmall') {
     // Landscape.
     @include orientation(landscape) {
       @include padding(2em, 1.5em);
@@ -172,12 +172,12 @@
   .main-body.is-preload &,
   body.is-preload & {
     .content {
-      @include vendor("transform", "translateX(2em)");
+      @include vendor('transform', 'translateX(2em)');
       opacity: 0;
     }
 
     .image {
-      @include vendor("transform", "translateY(4em)");
+      @include vendor('transform', 'translateY(4em)');
       opacity: 0;
 
       img {
@@ -186,16 +186,16 @@
     }
 
     // Medium.
-    @include breakpoint("<=medium") {
+    @include breakpoint('<=medium') {
       // Portrait.
       @include orientation(portrait) {
         .content {
-          @include vendor("transform", "none");
+          @include vendor('transform', 'none');
           opacity: 1;
         }
 
         .image {
-          @include vendor("transform", "translateY(2em)");
+          @include vendor('transform', 'translateY(2em)');
         }
       }
     }

@@ -22,17 +22,17 @@ textarea {
   font-size: 16pt;
 
   // XLarge.
-  @include breakpoint("<=xlarge") {
+  @include breakpoint('<=xlarge') {
     font-size: 13pt;
   }
 
   // Large.
-  @include breakpoint("<=large") {
+  @include breakpoint('<=large') {
     font-size: 12pt;
   }
 
   // XXSmall.
-  @include breakpoint("<=xxsmall") {
+  @include breakpoint('<=xxsmall') {
     font-size: 11pt;
   }
 }
@@ -49,10 +49,10 @@ textarea {
 
 a {
   @include vendor(
-    "transition",
+    'transition',
     (
-      "color #{_duration(transition)} ease-in-out",
-      "border-bottom-color #{_duration(transition)} ease-in-out"
+      'color #{_duration(transition)} ease-in-out',
+      'border-bottom-color #{_duration(transition)} ease-in-out'
     )
   );
   text-decoration: none;
@@ -95,7 +95,7 @@ h6 {
   }
 
   // Medium.
-  @include breakpoint("<=medium") {
+  @include breakpoint('<=medium') {
     br {
       display: none;
     }
@@ -128,7 +128,7 @@ h6 {
 }
 
 // Small.
-@include breakpoint("<=small") {
+@include breakpoint('<=small') {
   h2 {
     font-size: 1.25em;
   }
@@ -159,7 +159,7 @@ blockquote {
   border-left-width: (_size(border-width) * 4);
   font-style: italic;
   margin: 0 0 _size(element-margin) 0;
-  padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4)
+  padding: calc(_size(element-margin) / 4) 0 calc(_size(element-margin) / 4)
     _size(element-margin);
 }
 

@@ -1,10 +1,10 @@
-import React from "react";
-import Layout from "../components/Layout";
+import React from 'react';
+import Layout from '../components/Layout';
 
 const NotFoundPage = () => {
   return (
     <Layout>
-      <section id="one" className="wrapper" style={{ minHeight: "100vh" }}>
+      <section id="one" className="wrapper" style={{ minHeight: '100vh' }}>
         <header className="major">
           <h2>
             404

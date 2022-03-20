@@ -19,7 +19,7 @@ header {
     margin: 0 0 (_size(element-margin) * 0.75) 0;
 
     // Small.
-    @include breakpoint("<=small") {
+    @include breakpoint('<=small') {
       br {
         display: none;
       }
@@ -51,7 +51,7 @@ header {
     text-align: center;
 
     &:after {
-      content: "";
+      content: '';
       border-bottom: solid (_size(border-width) * 2) _palette(border);
       display: block;
       width: 4em;
@@ -59,7 +59,7 @@ header {
     }
 
     // Small.
-    @include breakpoint("<=small") {
+    @include breakpoint('<=small') {
       margin: (_size(element-margin) * 1.5) 0;
 
       p {

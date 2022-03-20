@@ -1,26 +1,16 @@
-import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
-import { Link } from "gatsby";
-import scrollTo from "gatsby-plugin-smoothscroll";
-import { StaticImage } from "gatsby-plugin-image";
-import Layout from "../components/Layout";
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
+import scrollTo from 'gatsby-plugin-smoothscroll';
+import { StaticImage } from 'gatsby-plugin-image';
+import Layout from '../components/Layout';
 
-const IndexPage = ({ pageContext }) => {
-  const [blog, setBlog] = useState([]);
-
-  useEffect(() => {
-    let newPosts = [];
-
-    Object.keys(pageContext).forEach((key) => newPosts.push(pageContext[key]));
-
-    newPosts.sort((a, b) => b.publishAt.localeCompare(a.publishAt));
-
-    setBlog(newPosts);
-  }, [pageContext]);
+const IndexPage = ({ data }) => {
+  const blogContent = data?.allPost?.nodes || [];
 
   return (
     <Layout>
-      <Helmet htmlAttributes={{ lang: "en" }}>
+      <Helmet htmlAttributes={{ lang: 'en' }}>
         <title>Object Press Gatsby</title>
         <meta charSet="utf-8" />
         <meta
@@ -50,8 +40,8 @@ const IndexPage = ({ pageContext }) => {
               <span
                 role="button"
                 tabIndex={0}
-                onClick={() => scrollTo("#one")}
-                onKeyDown={() => scrollTo("#one")}
+                onClick={() => scrollTo('#one')}
+                onKeyDown={() => scrollTo('#one')}
                 className="button icon fa-chevron-down"
               >
                 Learn More
@@ -97,16 +87,16 @@ const IndexPage = ({ pageContext }) => {
 
       <section id="two" className="wrapper">
         <div className="inner alt">
-          {blog.map((post) => {
+          {blogContent.map((post) => {
             return (
               <section className="spotlight" key={post.title}>
                 <div className="image fit">
-                  <img src={post.images[0]} alt={post.branches.altTag} />
+                  <img src={post.images[0]} alt={post.altTags[0]} />
                 </div>
                 <div className="content">
                   <h3>{post.title}</h3>
 
-                  <p>{post.branches.summary}</p>
+                  <p>{post.description}</p>
 
                   <ul className="actions special">
                     <li>
@@ -170,5 +160,23 @@ const IndexPage = ({ pageContext }) => {
     </Layout>
   );
 };
+
+export const query = graphql`
+  query blogGridPageQuery {
+    allPost {
+      nodes {
+        title
+        publishAt
+        pageTitle
+        slug
+        content
+        description
+        keywords
+        images
+        altTags
+      }
+    }
+  }
+`;
 
 export default IndexPage;
