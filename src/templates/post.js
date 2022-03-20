@@ -11,7 +11,7 @@ const PostPage = ({ pageContext: post }) => {
       <Helmet htmlAttributes={{ lang: 'en' }}>
         <title>{post.title} | Object Press Gatsby</title>
         <meta charSet="utf-8" />
-        <meta name="keywords" content={post.metaKeywords} />
+        <meta name="keywords" content={post.keywords} />
         <meta name="description" content={post.description} />
         <meta name="robots" content="index, follow" />
       </Helmet>
