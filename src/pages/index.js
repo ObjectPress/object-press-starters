@@ -23,7 +23,6 @@ const IndexPage = ({ data }) => {
           content="A free headless content management system, that's built to scale!"
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://gatsby.objectpress.io" />
       </Helmet>
 
       <header id="header">

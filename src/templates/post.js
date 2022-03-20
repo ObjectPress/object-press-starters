@@ -14,10 +14,6 @@ const PostPage = ({ pageContext: post }) => {
         <meta name="keywords" content={post.keywords} />
         <meta name="description" content={post.description} />
         <meta name="robots" content="index, follow" />
-        <link
-          rel="canonical"
-          href={`https://gatsby.objectpress.io/${post.slug}`}
-        />
       </Helmet>
 
       <header id="header">
