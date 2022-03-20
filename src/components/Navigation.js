@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Logo from '../assets/images/logo-text.webp';
+import LogoText from '../assets/images/logo-text.webp';
 
 const Navigation = () => {
   return (
@@ -8,7 +8,13 @@ const Navigation = () => {
       <ul className="icons labeled">
         <li>
           <a href="https://www.objectpress.io">
-            <img src={Logo} className="logo" alt="Object Press" />
+            <img
+              src={LogoText}
+              className="logo"
+              placeholder="blurred"
+              alt="Object Press"
+              height={35}
+            />
           </a>
         </li>
 

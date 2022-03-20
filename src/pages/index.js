@@ -23,7 +23,9 @@ const IndexPage = ({ data }) => {
           content="A free headless content management system, that's built to scale!"
         />
         <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://gatsby.objectpress.io" />
       </Helmet>
+
       <header id="header">
         <div className="content">
           <h1>Object Press Gatsby</h1>
@@ -53,7 +55,7 @@ const IndexPage = ({ data }) => {
         <div className="image phone">
           <div className="inner">
             <StaticImage
-              src="../assets/images/screen.jpg"
+              src="../assets/images/screen.webp"
               className="mobile"
               placeholder="blurred"
               layout="constrained"
