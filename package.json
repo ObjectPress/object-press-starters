@@ -26,7 +26,7 @@
   },
   "scripts": {
     "start": "gatsby develop",
-    "build": "NODE_VERSION=14 gatsby build",
+    "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -43,5 +43,8 @@
   "devDependencies": {
     "@netlify/plugin-gatsby": "^2.1.3",
     "prettier": "^2.6.0"
+  },
+  "engines": {
+    "node": "^14"
   }
 }
