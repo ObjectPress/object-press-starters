@@ -7,6 +7,7 @@
     "url": "git+https://github.com/ObjectPress/object-press-starters.git"
   },
   "dependencies": {
+    "dayjs": "^1.11.0",
     "gatsby": "^4.10.1",
     "gatsby-plugin-image": "^2.10.0",
     "gatsby-plugin-manifest": "^4.10.1",
@@ -41,7 +42,6 @@
   "license": "ISC",
   "homepage": "https://github.com/ObjectPress/object-press-starters.git#readme",
   "devDependencies": {
-    "@netlify/plugin-gatsby": "^2.1.3",
     "prettier": "^2.6.0"
   }
 }

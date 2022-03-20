@@ -13,8 +13,8 @@
   <br />
 
   <p align="center">
-    <a href="https://app.netlify.com/start/deploy?repository=https://github.com/ObjectPress/object-press-starters">
-    <img src="https://www.netlify.com/img/deploy/button.svg">
+    <a href="https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/ObjectPress/object-press-starters">
+      <img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">
     </a>
   </p>
 

@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/Layout';
+const dayjs = require('dayjs');
 
 const IndexPage = ({ data }) => {
   const blogContent = data?.allPost?.nodes || [];
@@ -95,6 +96,8 @@ const IndexPage = ({ data }) => {
                 </div>
                 <div className="content">
                   <h3>{post.title}</h3>
+
+                  <small>{dayjs(post.publishAt).format('MMM DD, YYYY')}</small>
 
                   <p>{post.description}</p>
 

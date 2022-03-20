@@ -127,6 +127,12 @@ h6 {
   line-height: 1.5em;
 }
 
+small {
+  margin: 0;
+  font-size: 0.7em;
+  line-height: 1.5em;
+}
+
 // Small.
 @include breakpoint('<=small') {
   h2 {
