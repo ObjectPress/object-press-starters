@@ -26,7 +26,7 @@
   },
   "scripts": {
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "NODE_VERSION=14 gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Error: no test specified\" && exit 1"
