@@ -13,7 +13,6 @@ const Navigation = () => {
               className="logo"
               placeholder="blurred"
               alt="Object Press"
-              height={35}
             />
           </a>
         </li>
