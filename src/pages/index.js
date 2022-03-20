@@ -162,7 +162,7 @@ const IndexPage = ({ data }) => {
 };
 
 export const query = graphql`
-  query blogGridPageQuery {
+  query blogQuery {
     allPost {
       nodes {
         title
