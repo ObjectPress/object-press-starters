@@ -69,6 +69,6 @@ Distributed under the ISC License.
 
 ## Contact
 
-Email - hello@objectpress.io
+Email - vincent@objectpress.io
 
 GitHub - [github.com/ObjectPress](https://github.com/ObjectPress)
